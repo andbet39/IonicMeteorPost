@@ -1,0 +1,27 @@
+
+
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">New Post</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closePost()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="item item-body">
+                <img id="myImage" class="full-image">
+            </div>
+            <button ng-click="getPhoto()" class="button button-block button-balanced">
+                Add Photo
+            </button>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Message</span>
+                <input ng-model="newPost.message" type="text" placeholder="Message">
+            </label>
+            <button ng-disabled="!newPost.message" ng-click="post()" class="button button-block button-positive">
+                Post
+            </button>
+        </div>
+    </ion-content>
+</ion-modal-view>

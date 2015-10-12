@@ -1,0 +1,8 @@
+{
+  "name": "ionicmeteorpost",
+  "version": "0.0.1",
+  "dependencies": {
+    "ngCordova": "latest"
+  },
+  "private": true
+}
